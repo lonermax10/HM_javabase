@@ -13,14 +13,19 @@ import java.util.Scanner;
 public class kh6 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		do{
+		String[] a = new String[10];
+		for(int i = 0; i < 100; i++){
 			System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
-			String str = input.nextLine();
-			
-			if(str=="exit"){
+			a[i] = input.nextLine();
+			if(a.equals("exit")){
+				for(int j = 0; j< a.length; i++){
+					System.out.println(a[j]+"exit");
+				}
 				break;
 			}
-		}while(true);
+		}
+		input.close();
+		
 	}
 
 }
